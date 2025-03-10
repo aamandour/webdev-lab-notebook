@@ -7,12 +7,32 @@
     <title>Exercise 03 - Bootstrap Grid</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../_styles/styles.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>03 - Bootstrap Grid</h1>
+    <h1 class="fw-bold my-3">03 - Bootstrap Grid</h1>
     <!-- Add your code here -->
+    <div class="container h-100">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-12 purple-box">One</div>
+        <div class="col-md-6 col-lg-6 col-12 purple-box">Two</div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-lg-8 col-8 purple-box">Three</div>
+        <div class="col-md-4 col-lg-4 col-4 purple-box">Four</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-8 col-12 purple-box">Five</div>
+        <div class="col-md-4 col-lg-2 col-12 purple-box">Six</div>
+        <div class="col-md-4 col-lg-2 col-12 purple-box">Seven</div>
+      </div>
+    </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
