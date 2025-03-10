@@ -7,22 +7,64 @@
     <link rel="stylesheet" href="../_styles/styles.css" />
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
-    </form>
+    <main>
+      <h1>01 - Form</h1>
+      <form action="/submit" aria-labelledby="form-heading">
+        <h2 id="form-heading">User Information</h2>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="First & Last Name"
+          required
+          aria-required="true"
+        />
+        <br /><br />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          required
+          aria-required="true"
+        />
+        <br /><br />
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <div class="radio-group" role="radiogroup">
+            <input
+              type="radio"
+              id="spongebob"
+              checked
+              name="character"
+              value="Spongebob"
+              required
+              aria-required="true"
+            />
+            <label for="spongebob">Spongebob</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="patrick" name="character" value="Patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" id="sandy" name="character" value="Sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+        </fieldset>
+        <br />
+        <button
+          style="font-size: 24px"
+          type="submit"
+          class="primary"
+          aria-label="Submit form"
+          value="Submit"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
   </body>
 </html>
