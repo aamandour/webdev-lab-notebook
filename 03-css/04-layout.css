@@ -18,6 +18,10 @@ body {
   background-color: var(--blue);
 }
 
+main {
+  display: flex;
+}
+
 .section {
   display: inline-block;
   width: 75%;

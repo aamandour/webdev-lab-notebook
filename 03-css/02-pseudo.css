@@ -2,3 +2,10 @@
   width: 600px;
   margin: 40px auto;
 }
+
+/* Style the first letter of each paragraph */
+.paragraph::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+}
