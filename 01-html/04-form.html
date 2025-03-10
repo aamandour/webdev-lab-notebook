@@ -5,11 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 04 - Form</title>
+    <!-- Style for the table to make it the same as the screenshot -->
+    <style>
+      h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 32px;
+      }
+
+      form {
+        max-width: 50%;
+      }
+
+      label {
+        display: inline-block;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid #cccccc6b;
+      }
+
+      fieldset {
+        margin: 20px 0;
+        padding: 10px;
+        border: 2px solid #ccc;
+      }
+
+      legend {
+        font-weight: bold;
+      }
+
+      .btn-group {
+        margin-top: 10px;
+      }
+
+      .btn-group button {
+        border: 1px solid #cccccc6b;
+        background-color: white;
+        border-radius: 5px;
+        padding: 2px 14px;
+        margin-right: 5px;
+      }
+    </style>
   </head>
   <body>
     <main>
       <form action="/submit">
         <!-- Add your code here -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+        /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="name@pdx.edu"
+        /><br />
+
+        <fieldset>
+          <legend>Favorite Character:</legend>
+          <input
+            type="radio"
+            id="spongebob"
+            name="character"
+            value="Spongebob"
+          />
+          <label for="spongebob">Spongebob</label><br />
+
+          <input type="radio" id="sandy" name="character" value="Sandy" />
+          <label for="sandy">Sandy</label><br />
+
+          <input type="radio" id="patrick" name="character" value="Patrick" />
+          <label for="patrick">Patrick</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <input
+            type="checkbox"
+            id="watchedAll"
+            name="fan"
+            value="watchedAll"
+          />
+          <label for="watchedAll">Yes, I have watched all episodes!</label
+          ><br />
+
+          <input type="checkbox" id="loveMemes" name="fan" value="loveMemes" />
+          <label for="loveMemes">Yes, it's got the best memes.</label>
+        </fieldset>
+
+        <div class="btn-group">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </main>
   </body>
