@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../../javascript/exercises/04-dom.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="01-dom.js"></script>
+    <style>
+      .output-container {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -17,15 +24,19 @@
         <label for="userInput1">Input</label>
         <input id="userInput1" type="text" />
         <input type="button" value="Copy Text" id="copy" />
-        <div for="output1">Output</div>
-        <div id="output1" class="output"></div>
+        <div class="output-container">
+          <label for="output1">Output:</label>
+          <div id="output1" class="output"></div>
+        </div>
       </section>
       <section id="inputEventExample">
         <h2>Input Event</h2>
         <label for="userInput2">Input</label>
         <input id="userInput2" type="text" />
-        <div for="output2">Output</div>
-        <div id="output2" class="output"></div>
+        <div class="output-container">
+          <label for="output2">Output:</label>
+          <div id="output2" class="output"></div>
+        </div>
       </section>
     </main>
   </body>
